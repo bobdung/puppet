@@ -26,7 +26,6 @@ class nginx {
 
 	file { '/var/www/cat-pictures/index.html':
 		source => 'puppet:///modules/nginx/index.html',
-#		require => Package['/var/www/cat-pictures'],
 	}
 
 }
